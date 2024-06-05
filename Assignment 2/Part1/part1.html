@@ -33,22 +33,39 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+            <img srcset="images/firefox_logo-120px.png 120w,
+                         images/firefox_logo-only_400px.png 400w"
+                 sizes="(max-width: 500px) 120px,
+                 400px"
+                 src="images/firefox_logo-only_400px.png" alt="information about mozilla Firefox">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+            <img srcset="images/mozilla-dinosaur-head-120px.png 120w,
+            images/mozilla-dinosaur-head-400px.png 400w"
+             sizes="(max-width: 500px) 120px,
+             400px"
+             src="images/mozilla-dinosaur-head-400px.png" alt="learn about mozilla Firefox">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+            <img srcset="images/firefox-addons-120px.jpg 120w,
+            images/firefox-addons-400px.jpg 400w"
+             sizes="(max-width: 500px) 120px,
+             400px"
+             src="images/firefox-addons-400px.jpg" alt="learn about mozilla Firefox">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+            <img src="images/mdn.svg" alt="learning MDN Web Docs">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+            <source media="(max-width: 600px)" srcset="red-panda-portrait-small.jpg">
+            <img src="images/red-panda.jpg" alt="a red panda">
+          </picture>
+  
       </div>
 
     </main>
