@@ -4,21 +4,30 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <!-- Meta provide information about the document-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <!-- it shows title of tge document -->
     <title>Table for assignment 2 part 2</title>
+    <!-- provide css link for file -->
     <link href="table.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <!-- The real table starts form here -->
         <table>
+            <!-- caption of table with link in it -->
             <caption>Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA's Planetary Fact Sheet - Metric</a>)</caption>
+            <!-- column styling -->
             <colgroup>
                 <col span="2">
                 <col style="border: 2px solid black;">
                 <col span="9">
             </colgroup>
+            <!-- table header starts here -->
             <thead>
+                <!-- table row  -->
                 <tr>
+                    <!-- table data -->
                     <td colspan="2"></td>
                     <th scope="col">Name</th>
                     <th scope="col">Mass (10<sup>24</sup>kg)</th>
@@ -32,6 +41,7 @@
                     <th scope="col">Notes</th>
                 </tr>
             </thead>
+            <!-- table body starts here -->
             <tbody>
                 <tr>
                     <th scope="rowgroup" rowspan="4" colspan="2">Terrestrial planets</th>
@@ -153,3 +163,4 @@
 
   </body>
 </html>
+<!-- all the closing tags are here -->
