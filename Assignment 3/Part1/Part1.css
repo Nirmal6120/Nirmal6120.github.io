@@ -15,7 +15,7 @@
         color: #375e97;
         font-size: 2em;
         font-family: Georgia, "Times New Roman", Times, serif;
-        border-bottom: 1px solid #375e97;
+        border-bottom:10px dotted purple; /* Change border to dotted and color to purple */
       }
 
       h2 {
@@ -34,4 +34,14 @@
 
       a:hover {
         text-decoration: none;
+        /* It will change green color to link when you hover on it */
+        color:green;
+      }
+      ul {
+         /* Set the background color for ul */
+        background-color: #eeeeee;
+         /* Set the border for ul */
+        border: 5px solid purple;
+         /* Add padding to push content away from border */
+        padding: 10px;
       }
