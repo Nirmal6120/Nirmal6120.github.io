@@ -20,6 +20,8 @@
 
       h2 {
         font-size: 1.5em;
+        /* making h2 in italic letters */
+        font-style: italic;
       }
 
       .job-title {
