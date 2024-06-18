@@ -112,10 +112,10 @@ h1 + p, h2 + p {
     text-decoration: none;
   }
   
-  a.external::after {
-    /* using the link shows the icon in the page */
-    content: url('icons/external-link-icon.png'); 
-    margin-left: 0.5em;
+  a[href*="http"] {
+    padding-right: 19px;
+    background: url('link.png') no-repeat 100% 0;
+    background-size: 16px 16px;
   }
   
   /* Margin using em units */
