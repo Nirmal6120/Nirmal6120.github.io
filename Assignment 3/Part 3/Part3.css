@@ -138,18 +138,19 @@ h1 + p, h2 + p {
   }
   
   nav ul li {
-    padding: 10px 0;
-
+    list-style-type: none;
+    margin-bottom: 2rem;
+    
   }
   
   nav ul li a {
     display: block;
     padding: 10px;
-    color: #333;
     text-decoration: none;
     border: 1px solid #a66;
     margin-bottom: 10px;
     text-align: center;
+    box-shadow: inset 1px 1px 1px 
   }
   
   nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
@@ -157,4 +158,3 @@ h1 + p, h2 + p {
     color: #fff;
     text-decoration: none;
   }
-  
