@@ -15,7 +15,7 @@ div {
      line-height:9;
 
      /* set the size for the text */
-     font-size: 1.1rem;
+     font-size:1.1rem;
      /* it will set the text in center of box */
      text-align: center;
      /* sets the color of text to white */
@@ -34,7 +34,7 @@ div {
      background-image: linear-gradient(
           to top left,
           rgba(0,0,0,0.2),
-          rgba(0,0,0,0.3)30%,
+          rgba(0,0,0,0.2)30%,
           rgba(0,0,0,0)
      );
      /* effets of the shadow for the box given */
