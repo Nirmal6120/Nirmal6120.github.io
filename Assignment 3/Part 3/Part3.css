@@ -45,3 +45,18 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+/* Font-face is use to show text even when it is not installed on that device */
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('fonts/CustomFont1.woff2') format('woff2'),
+         url('fonts/CustomFont1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('fonts/CustomFont1.woff2') format('woff2'),
+         url('fonts/CustomFont1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
