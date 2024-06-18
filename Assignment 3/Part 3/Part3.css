@@ -139,6 +139,7 @@ h1 + p, h2 + p {
   
   nav ul li {
     padding: 10px 0;
+
   }
   
   nav ul li a {
@@ -146,6 +147,9 @@ h1 + p, h2 + p {
     padding: 10px;
     color: #333;
     text-decoration: none;
+    border: 1px solid #a66;
+    margin-bottom: 10px;
+    text-align: center;
   }
   
   nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
