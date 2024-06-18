@@ -60,3 +60,97 @@ header, footer {
     font-weight: normal;
     font-style: normal;
   }
+/* setting the size of font of the body */
+body{
+    /* sets the type of the font and size of that font */
+    font-family: 'CustomFont1', sans-serif;
+    font-size: 16px;
+}
+/* setting the heading fonts */
+h1,h2{
+    font-family: 'CustomFont2',serif;
+}
+/* changing the fonr sizes using em and rem units */
+h1{
+    font-size: 2rem;
+    text-align: center;
+    /* create letter spacing for the heading */
+    letter-spacing: 0.1em;
+}
+h2{
+    font-size: 1.5rem;
+    /* create letter spacing for the heading */
+    letter-spacing: 0.1em;
+}
+/* setting the font size and spacing for the elemetns of paragraph and list */
+p,li{
+    font-size: 1rem;
+    /* changing line height for the body */
+    line-height: 1.5;
+    /* letter spacing for the body text */
+    letter-spacing: 0.05em;
+}
+/* First paragraph after each heading indent */
+h1 + p, h2 + p {
+    text-indent: 2em;
+  }
+  
+  /* Link styles */
+  a {
+    /* set the color */
+    color: #a66;
+    text-decoration: underline;
+     /* Removes default from the page outline */
+    outline: none;
+  }
+  
+  a:visited {
+    color: #955;
+  }
+  
+  a:focus, a:hover {
+    text-decoration: none;
+  }
+  
+  a.external::after {
+    /* using the link shows the icon in the page */
+    content: url('icons/external-link-icon.png'); 
+    margin-left: 0.5em;
+  }
+  
+  /* Margin using em units */
+  section {
+    margin: 2em 0;
+  }
+  
+  /* style used in list tags */
+  ul, ol {
+    list-style-type: disc; /* Example for ul */
+  }
+  
+  nav ul {
+     /* it will remove the list style from nav */
+    list-style-type: none; 
+    /* set the padding */
+    padding: 0;
+    /* set the margin */
+    margin: 0;
+  }
+  
+  nav ul li {
+    padding: 10px 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+    background-color: #a66;
+    color: #fff;
+    text-decoration: none;
+  }
+  
