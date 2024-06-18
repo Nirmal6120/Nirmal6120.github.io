@@ -12,10 +12,10 @@ div {
      width of box in pixels, margin and height of it */
      width: 200px;
      margin: auto;
-     line-height:9
+     line-height:9;
 
      /* set the size for the text */
-     font-size 1.1rem;
+     font-size: 1.1rem;
      /* it will set the text in center of box */
      text-align: center;
      /* sets the color of text to white */
