@@ -6,4 +6,14 @@ html {
     font-family: sans-serif;
   }
   
-  /* Your CSS below here */
+div {
+
+     /* this below given code describe 
+     width of box in pixels, margin and height of it */
+     width: 200px;
+     margin: auto;
+     line-height:9
+
+     font-size 1.1rem;
+
+}
