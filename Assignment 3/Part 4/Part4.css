@@ -2,30 +2,44 @@
      Date:18 June 2024
      Discription: Third HTML Project css file of part 4  */
 
+/* styling for body */
 body {
+  /* sets the background color to white */
     background-color: #fff;
+    /* set the text color to grey */
     color: #333;
+    /* sets the margin to 0 or remove it */
     margin: 0;
+    /* sets the size heigth and the font of the text */
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
   }
-
+/* styling for the image */
   img {
+      /* sets maximum width of the image */
       max-width: 100%;
+      /* Display the images as the block of elements */
       display: block;
   }
-  
+
+  /* styling for the logo */
   .logo {
+    /* sets the font size */
     font-size: 200%;
+    /* padding aroung the logo */
     padding: 50px 20px;
+    /* sets the margin of the logo */
     margin: 0 auto;
+    /* maximum width for the logo */
     max-width: 980px;
   }
   
+  /* styling for the grid layout which belongs to main */
   .grid {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
     display: grid;
+    /* Define column proportions: 3 parts for main content, 1 part for sidebar */
     grid-template-columns: 3fr 1fr;
     gap:20px;
   }
@@ -34,6 +48,7 @@ body {
     background-color: #000;
     padding: .5em;
     top: 0;
+    /* make the navigation bar stick to top on scroll */
     position:sticky;
   }
   
@@ -42,6 +57,7 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
+    /* make proper spacing between the text  */
     justify-content: space-between;
   }
   
@@ -52,16 +68,19 @@ body {
   }
   
   .photos {
+    /* remove the bullet points from the images */
     list-style: none;
     margin: 0;
     padding: 0;
     display: grid;
     gap: 1px;
+    /* shows a grid with two column grid */
     grid-template-columns: 1fr 1fr;
   }
 
   .feature {
       width: 200px;
       float: left;
+      /* sets the margin for top to 0 20 px on right and bottom and 0 on left*/
       margin: 0 20px 20px 0;
   }
