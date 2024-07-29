@@ -1,3 +1,8 @@
+/* Author Name: Nirmal Patel
+     Date:29 June 2024
+     Discription: fourth HTML assignment part 1
+     it is the actual java script code */
+
 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
