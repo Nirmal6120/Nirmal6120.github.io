@@ -13,34 +13,39 @@ const overlay = document.querySelector('.overlay');
 const imageFiles = ['pic1.jpg' , 'pic2.jpg', 'pic3.jpg' ,'pic4.jpg', 'pic5.jpg'];
 
 /* Declaring the alternative text for each image file */
-const altText = ['picture of eye', 'painting of the desert', 'painting of the flowers'
-    , 'painting of the ancient peoples' , 'butterfly on leaf']
+const altText = [
+  'Closeup of a human eye', 
+  'painting of the desert',
+  'painting of the flowers',
+  'painting of the ancient peoples' ,
+  'butterfly on leaf'
+];
 
 /* Looping through images */
-for(let i=0; i<imageFiles.length; i++){
-    const newImage = document.createElement('img');
-    newImage.setAttribute('src',`images/${imageFiles[i]}`);
-    newImage.setAttribute('alt', altText[i]);
-    thumbBar.appendChild(newImage);
+for(let i = 0; i < imageFiles.length; i++) {
+  const newImage = document.createElement('img');
+  newImage.setAttribute('src',`images/${imageFiles[i]}`);
+  newImage.setAttribute('alt', altText[i]);
+  thumbBar.appendChild(newImage);
+
+  newImage.addEventListener('click',(e) => {
+    displayedImage.src = e.target.src;
+    displayedImage.alt = e.target.alt;
+  });
 }
 
 
- newImage.addEventListner('click',(e) => {
-    displayedImage.src = e.target.src;
-    displayedImage.alt = e.target.alt;
- })
-
 /* Wiring up the Darken/Lighten button */
 
-btn.addEventListner('click',()=> {
-    const btnClass = btn.getAttribute('class');
-    if(btnClass === 'dark'){
-       btn.setAttribute('class','Light'); 
-       btn.textContent = 'Lighten';
-       overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
-    }else{
+btn.addEventListener('click', ()=> {
+  const btnClass = btn.getAttribute('class');
+  if(btnClass === 'dark'){
+    btn.setAttribute('class','light'); 
+    btn.textContent = 'Lighten';
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+  } else {
        btn.setAttribute('class','dark');
        btn.textContent = 'Darken';
        overlay.style.backgroundColor = 'rgba(0,0,0,0)'; 
-    }
-})
+  }
+});
