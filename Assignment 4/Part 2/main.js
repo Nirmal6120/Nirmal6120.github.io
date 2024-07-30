@@ -1,3 +1,9 @@
+/* Author Name: Nirmal Patel
+     Date:29 June 2024
+     Discription: fourth HTML assignment part 2
+     it is the actual java script code */
+
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
