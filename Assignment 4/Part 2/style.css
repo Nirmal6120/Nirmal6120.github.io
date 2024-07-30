@@ -2,40 +2,60 @@
      Date:29 July 2024
      Discription: 4th HTML Project css file of part 2  */
 
+/* styling for heading h1 tag */
 h1 {
+  /* sets font for heading */
   font-family: helvetica, arial, sans-serif;
+  /* align text to center */
   text-align: center;
 }
-
+/* styling for body tag */
 body {
+  /* sets width for body tag */
   width: 640px;
+  /* sets margin  */
   margin: 0 auto;
 }
 
 .full-img {
+  /* set image to normal position */
   position: relative;
+  /* display image as a block */
   display: block;
+  /* sets width of iamge */
   width: 640px;
+  /* sets height of image */
   height: 480px;
 }
 
 .overlay {
+  /* set image to overlay on the image which is in parent container with relative position */
   position: absolute;
+  /* sets top egde */
   top: 0;
   left: 0;
+  /* sets width */
   width: 640px;
   height: 480px;
+  /* sets background color */
   background-color: rgba(0,0,0,0);
 }
 
 button {
+  /* remove the border */
   border: 0;
+  /* sets background color */
   background: rgba(150,150,150,0.6);
+  /* sets shadow for text */
   text-shadow: 1px 1px 1px white;
+  /* sets border */
   border: 1px solid #999;
   position: absolute;
+  /* changes cursor to pointer when hovered */
   cursor: pointer;
+  /* set position for button from top */
   top: 2px;
+  /* set position for button from left */
   left: 2px;
 }
 
