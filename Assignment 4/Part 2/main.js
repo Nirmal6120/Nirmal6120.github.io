@@ -18,13 +18,12 @@ const altText = ['picture of eye', 'painting of the desert', 'painting of the fl
 
 /* Looping through images */
 for(let i=0; i<imageFiles.length; i++){
-    const Images = document.createElement('img');
-    Images.setAttribute('src',`images/${imageFiles[i]}`);
-    Images.setAttribute('alt', altText[i]);
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src',`images/${imageFiles[i]}`);
+    newImage.setAttribute('alt', altText[i]);
     thumbBar.appendChild(newImage);
 }
 
-const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
 newImage.setAttribute('alt', xxx);
 thumbBar.appendChild(newImage);
