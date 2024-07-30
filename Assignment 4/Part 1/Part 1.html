@@ -4,25 +4,35 @@
      it teach us about the use of java script -->
 
 
+<!-- shows which type of document it is  -->
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <!-- Metadata for the document -->
+     <!-- sets the charset for the document -->
     <meta charset="utf-8" />
+    <!-- sets the viewpoint for the resposive web page-->
     <meta name="viewport" content="width=device-width" />
 
+    <!-- shows title for the actual webpage -->
     <title>Silly story generator</title>
 
+    <!-- css for the html page which is inbuild in the code as per the raw file -->
     <style>
       body {
+        /* sets the fonts */
         font-family: helvetica, sans-serif;
+        /* set width for the body */
         width: 350px;
       }
 
       label {
+        /* make the label bold */
         font-weight: bold;
       }
 
       div {
+        /* add padding */
         padding-bottom: 20px;
       }
 
@@ -32,8 +42,11 @@
       }
 
       p {
+        /* sets background color */
         background: #ffc125;
+        /* sets text color */
         color: #5e2612;
+        /* add padding */
         padding: 10px;
         visibility: hidden;
       }
@@ -42,20 +55,28 @@
 
   <body>
     <div>
+      <!-- label for to enter custom name -->
       <label for="customname">Enter custom name:</label>
+      <!-- text box to input the custome name -->
       <input id="customname" type="text" placeholder="" />
     </div>
     <div>
-      <label for="us">US</label
-      ><input id="us" type="radio" name="ukus" value="us" checked />
-      <label for="uk">UK</label
-      ><input id="uk" type="radio" name="ukus" value="uk" />
+      <!-- label for US radio button -->
+      <label for="us">US</label>
+      <!-- by default it will be checked -->
+      <input id="us" type="radio" name="ukus" value="us" checked />
+      <!-- label for UK radio button -->
+      <label for="uk">UK</label>
+      <!-- actual radio button code for UK -->
+      <input id="uk" type="radio" name="ukus" value="uk" />
     </div>
     <div>
+      <!-- button to generate the story -->
       <button class="randomize">Generate random story</button>
     </div>
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
-    <script src="part1.js"></script>
+    <!-- adding java script by using src -->
+    <script src="main.js"></script>
   </body>
 </html>
