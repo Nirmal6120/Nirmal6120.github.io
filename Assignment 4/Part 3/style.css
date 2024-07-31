@@ -2,29 +2,42 @@
      Date:31 July 2024
      Discription: 4th HTML Project css file of part 3  */
 
-
+/* sets the margin of body and html */
 html, body {
   margin: 0;
 }
 
+/* sets the font family for html document */
 html {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
 }
 
+/* elemtns for body tag */
 body {
+  /* it is used to hide the overflow content.  */
   overflow: hidden;
+  /* it inherits the height of the element. */
   height: inherit;
 }
 
+/* h1 tag styling */
 h1 {
+  /* set the font size */
   font-size: 2rem;
+  /* set spacing between letters */
   letter-spacing: -1px;
+  /* set the position */
   position: absolute;
+  /* set the margin to 0 */
   margin: 0;
+  /* set the top */
   top: -4px;
+  /* set the element to 5 px in right direction */
   right: 5px;
 
+  /* sets the color of text */
   color: transparent;
+  /* sets effect to the text  */
   text-shadow: 0 0 4px white;
 }
