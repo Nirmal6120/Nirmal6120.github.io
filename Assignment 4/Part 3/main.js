@@ -4,12 +4,7 @@
      it is the actual java script code */
 
 
-
-
 // setup canvas
-
-
-
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -26,4 +21,15 @@ function random(min, max) {
 
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+}
+
+class Ball {
+    constructor(x,y,veIX,veIY,color,size){
+        this.x = x;
+        this.y = y;
+        this.veIX = veIX;
+        this.veIY = veIY;
+        this.color = color;
+        this.size = size;
+    }
 }
