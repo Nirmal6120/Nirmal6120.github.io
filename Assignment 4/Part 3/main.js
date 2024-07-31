@@ -1,4 +1,14 @@
+/* Author Name: Nirmal Patel
+     Date:31 July 2024
+     Discription: fourth HTML assignment part 3
+     it is the actual java script code */
+
+
+
+
 // setup canvas
+
+
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
