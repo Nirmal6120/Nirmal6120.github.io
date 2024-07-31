@@ -29,9 +29,9 @@ function randomRGB() {
 }
 
 // ball class 
-class Ball {
+class shape {
     // constructor to crate ball objects
-    constructor(x,y,veIX,veIY,color,size){
+    constructor(x,y,veIX,veIY){
         // x coordinate of ball.
         this.x = x;
         // y coordinate of ball.
@@ -40,11 +40,8 @@ class Ball {
         this.veIX = veIX;
         // vertical velocity of ball
         this.veIY = veIY;
-        // color of the ball
-        this.color = color;
-        // size of ball
-        this.size = size;
     }
+}
 
     // draw method
     draw(){
