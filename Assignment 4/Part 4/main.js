@@ -90,8 +90,7 @@ class Ball {
     collisionDetect() {
         // uses for loop to loop all balls in an array.
         for (const ball of balls) {
-          // ensure that the ball is not same.
-          if (this !== ball) {
+          if (!(this === ball) && ball.exists) {
             // it will calculate difference between x coordinates.
             const dx = this.x - ball.x;
             // it will calcualte difference between y coordinates.
