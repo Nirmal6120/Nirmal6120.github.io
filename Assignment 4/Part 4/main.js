@@ -43,6 +43,15 @@ class shape {
     }
 }
 
+class ball extends shape{
+    constructor(x,y,veIX,veIY,color,size){
+        super(x,y,veIX,veIY);
+        this.color = color;
+        this.size = size;
+
+    }
+
+
     // draw method
     draw(){
         // begin new path for the ball.
@@ -104,6 +113,8 @@ class shape {
         }
       }
     }
+
+    
 
     // create an array to hold the balls 
     const balls = [];
