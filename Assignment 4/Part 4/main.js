@@ -114,7 +114,69 @@ class ball extends shape{
       }
     }
 
-    
+class EvilCircle extends shape{
+    constructor(x,y){
+        super(x,y,20,20)
+        this.color = 'white';
+        this.size = 10;
+    }
+
+
+    draw(){
+        ctx.beginPath();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = this.color;
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+        ctx.stroke();
+    }
+
+    checkBounds(){
+        if(this.x + this.size >= width){
+            this.x -= this.size;
+        }
+        if(this.x - this.size <= 0){
+            this.x += this.size;
+        }
+        if(this.y - this.size <= height){
+            this.y += this.size;
+        }
+        if(this.y - this.size <= 0){
+            this.y += this.size;
+        }
+    }
+    setControls(){
+        window.addEventListener("keydown", (e) => {
+            switch (e.key) {
+              case "a":
+                this.x -= this.velX;
+                break;
+              case "d":
+                this.x += this.velX;
+                break;
+              case "w":
+                this.y -= this.velY;
+                break;
+              case "s":
+                this.y += this.velY;
+                break;
+            }
+          });
+          
+    }
+
+    collisionDetect(){
+        for(const ball of balls){
+            const dx = this.x - ball.x;
+            const dy = this.y - ball.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if(distance < this.size + ball.size){
+                ball.x = random(0 + ball.size, width - ball.size);
+                ball.y = random(0 + ball.size, height - ball.size);
+            }
+        }
+    }
+}
 
     // create an array to hold the balls 
     const balls = [];
@@ -141,8 +203,11 @@ class ball extends shape{
         
         // it will add new ball to an array.
         balls.push(ball);
-    }
+}
 
+
+const evilCircle = new EvilCircle(width / 2, height /2);
+evilCircle.setControls();
 // loop for the animation
 function loop() {
     // set background color for the canvas
