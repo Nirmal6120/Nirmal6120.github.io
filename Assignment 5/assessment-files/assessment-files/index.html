@@ -8,8 +8,11 @@
   <head>
     <meta charset="utf-8">
 
+    <!-- show title of the page -->
     <title>Accessibility assessment</title>
+    <!-- link for the fonts used in this document -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <!-- link for the css file -->
     <link rel="stylesheet" href="style.css">
 
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
@@ -19,10 +22,12 @@
   </head>
 
   <body>
+    <!-- header section -->
     <header>
       <h1>Welcome to our wildlife website</h1>
     </header>
 
+    <!-- Navigation section  -->
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -31,16 +36,20 @@
         <li><a href="#">Blog</a></li>
       </ul>
 
+      <!-- serach bar -->
       <form class="search">
         <input type="search" name="q" placeholder="Search query">
         <input type="submit" value="Go!">
       </form>
     </nav>
 
+    <!-- main section of the document -->
     <main>
+      <!-- arcticle section -->
       <article>
         <h2>The trouble with Bears</h2>
         <br><br>
+        <!-- show actual content and the author of the arcticle -->
         By Evan Wild
         <br><br>
         Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from renowned documentary, The Jungle Book.
@@ -53,9 +62,12 @@
         <br><br>
         Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.
         <br><br>
+        <!-- table tag -->
         <table>
+          <!-- elements to create table -->
           <thead>
             <tr>
+              <!-- table header elements -->
               <th scope="col">Bear Type</th>
               <th scope="col">Coat</th>
               <th scope="col">Adult size</th>
@@ -67,6 +79,7 @@
           <tbody>
             <tr>
               <th scope="row">Wild</th>
+              <!-- table data elements -->
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -88,6 +101,7 @@
         <br><br>
         Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.
         <br><br>
+        <!-- link for the images and alternate text  -->
         <img src="media/wild-bear.jpg" alt="It is a image of a bear in his wildlife">
         <br><br>
         Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.
@@ -102,7 +116,9 @@
         <br><br>
         The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.
         <br><br>
+        <!-- audio clip of bear with accessibility  -->
         <audio controls aria-labelledby="audio-description">
+          <!-- actual link for the audio -->
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
           <p id ="audio-description">It looks like your browser doesn't support HTML5 audio players.here is audio file which you can access<a href="media/bear.mp3"></a></p>
@@ -118,6 +134,7 @@
           He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.
 
         </aside>
+        <!-- section for the comments -->
         <section class="comments">
           <div class="show-hide">Show comments</div>
 
@@ -158,7 +175,7 @@
       </article>
 
       <div class="secondary">
-        <h3>Related</h3>
+        <h2>Related</h2>
 
         <ul>
           <li><a href="#">The trouble with Bees</a></li>
@@ -170,10 +187,12 @@
       </div>
     </main>
 
+    <!-- footer for the actual document -->
     <footer>
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
 
+    <!-- link for the javascirpt file -->
     <script src="main.js"></script>
 
   </body>

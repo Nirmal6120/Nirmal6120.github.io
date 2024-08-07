@@ -4,22 +4,26 @@
      CSS file for Web Accessibility  */
 /* || General setup */
 
+/* html and body tag css for padding */
 html, body {
   margin: 0;
   padding: 0;
 }
 
+/* Set font size and background color for html */
 html {
   font-size: 10px;
   background-color: #dde;
 }
 
+/* elements used in body tag */
 body {
   width: 80%;
   min-width: 1024px;
   margin: 0 auto;
 }
 
+/* styling for the header */
 header {
   color: white;
   padding: 1rem;
@@ -28,17 +32,20 @@ header {
   text-shadow: 2px 2px 10px black;
 }
 
+/* setting font style for text element */
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
 
+/* styling for the h2 tag */
 h2 {
   font-size: 3rem;
   text-align: center;
   font-family: 'Sonsie One', cursive;
 }
 
+/* styling for h3 tag */
 h3 {
   font-size: 2.2rem;
   font-family: 'Sonsie One', cursive;
@@ -51,10 +58,12 @@ p, li, table {
 
 /* || header layout */
 
+/* set the background color for the elements */
 nav, article, footer, .secondary {
   background-color: white;
 }
 
+/* add padding for the elements */
 article, footer, .secondary {
   padding: 10px 30px;
 }
@@ -63,6 +72,7 @@ article {
   margin-right: 10px;
 }
 
+/* styling elements of the nav */
 nav {
   height: 50px;
   background-color: ff80ff;
@@ -105,6 +115,7 @@ nav.search {
   height: 32px;
 }
 
+/* flex box setting for the input search input */
 .search input[type="search"] {
   flex: 3;
 }
@@ -150,11 +161,12 @@ th, td {
 td {
   text-align: center;
 }
-
+/* add border to table header */
 th[scope="col"] {
   border-bottom: 1px solid black;
 }
 
+/* add background color for different rows */
 tbody tr:nth-child(odd) {
   background-color: #def;
 }
@@ -235,6 +247,7 @@ audio {
   margin-top: 0;
 }
 
+/* flex box settings */
 .comment-container li {
   list-style-type: none;
   display: flex;
@@ -245,6 +258,7 @@ audio {
   font-weight: bold;
 }
 
+/* flex box setting for comment  */
 .comment-container li p:nth-child(2) {
   flex: 5;
 }
