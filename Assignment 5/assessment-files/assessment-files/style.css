@@ -18,9 +18,11 @@ html {
 
 /* elements used in body tag */
 body {
-  width: 98%;
+  width: 98% auto;
   min-width: 1024px;
   margin: 0 auto;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* styling for the header */
