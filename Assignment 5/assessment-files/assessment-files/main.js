@@ -1,3 +1,11 @@
+/* Author Name: Nirmal Patel
+   Date: 7 august 2024
+   Description: Assignment 5
+   javascript file for Web Accessibility
+*/
+
+
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
